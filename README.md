@@ -1,67 +1,8 @@
-# Sneaker Shop Full Stack
+# React + Vite
 
-[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://shields.io/)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://shields.io/)
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Description
+Currently, two official plugins are available:
 
-Sneaker Shop is a full-stack web application designed to provide a seamless shopping experience for sneaker enthusiasts. The project includes a modern frontend interface and a robust backend API to handle user authentication, product management, and order processing.
-
-## Table of Contents
-
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Installation](#installation)
-
----
-
-## Features
-
-- User authentication (sign up, login, logout)
-- Browse and search for sneakers
-- Add sneakers to the cart and manage orders
-- Admin panel for managing products
-- Responsive design for all devices
-
----
-
-## Technologies Used
-
-### Frontend:
-
-- React.js
-- Tailwind CSS
-- Axios
-- Material UI
-
-### Backend:
-
-- Node.js
-- Express.js
-- MongoDB (Mongoose ORM)
-
-### Others:
-
-- JWT Authentication
-- Stripe API for payment processing
-- Cloudinary for image uploads
-
----
-
-## Installation
-
-### Prerequisites
-
-Ensure you have the following installed on your machine:
-
-- Node.js
-- MongoDB
-- Git
-
-### Clone the Repository
-
-```bash
-git clone https://github.com/khaledsaoud15/sneaker_shop_full_stack.git
-cd sneaker_shop_full_stack
-```
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
