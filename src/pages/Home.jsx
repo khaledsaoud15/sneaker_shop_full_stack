@@ -4,6 +4,7 @@ import MarqueeItem from "../components/Marquee";
 import Hero from "../components/Hero";
 import Categories from "../components/Categories";
 import Brands from "../components/Brands";
+import Products from "../components/Products";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Hero />
       <Categories />
       <Brands />
+      <Products />
     </div>
   );
 };
