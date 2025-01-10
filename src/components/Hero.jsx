@@ -22,7 +22,7 @@ const Hero = () => {
         </Button>
       </div>
       <img
-        src="./hero.jpg"
+        src="./assets/hero.jpg"
         alt=""
         className="w-full aspect-auto lg:w-1/3 shadow-mainshadow"
       />
