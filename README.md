@@ -51,6 +51,10 @@ Sneaker Shop is a full-stack web application designed to provide a seamless shop
 
 ## Installation
 
+```bash
+npm install
+```
+
 ### Prerequisites
 
 Ensure you have the following installed on your machine:
