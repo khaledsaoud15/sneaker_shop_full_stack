@@ -1,18 +1,19 @@
-import { Search, ShoppingCart } from "@mui/icons-material";
+import { Search } from "@mui/icons-material";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <nav className="flex flex-row-reverse justify-between h-20 bg-white px-8 items-center w-full lg:flex-row lg:px-16">
       <div className="hidden items-center gap-8  lg:flex ">
-        <a href="">Home</a>
-        <a href="">About</a>
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
         <a href="" className="flex items-center">
           Shop <ArrowDropDownIcon />
         </a>
-        <a href="" className="flex items-center">
-          About <ArrowDropDownIcon />
+        <a href="#" className="flex items-center">
+          Blog <ArrowDropDownIcon />
         </a>
       </div>
       <div className="flex flex-col gap-1 cursor-pointer lg:hidden">
