@@ -1,6 +1,15 @@
 import React, { useState } from "react";
 import { products } from "../data";
 import Product from "./Product";
+import { Navigation, A11y } from "swiper/modules";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 
 const Products = () => {
   return (
@@ -13,11 +22,35 @@ const Products = () => {
           SEE MORE
         </a>
       </div>
-      <div className="relative flex flex-wrap w-full h-fit gap-4 md:justify-start">
+
+      <Swiper
+        className=" !w-full !h-[60vh] !items-center !flex !justify-center"
+        modules={[Navigation, A11y]}
+        spaceBetween={25}
+        slidesPerView={4}
+        navigation
+        loop={true}
+        breakpoints={{
+          650: {
+            slidesPerView: 2,
+            spaceBetween: 50,
+          },
+          780: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+          },
+        }}
+      >
         {products.map((p, index) => (
-          <Product key={index} p={p} />
+          <SwiperSlide className="!w-auto !h-[50vh]">
+            <Product key={index} p={p} />
+          </SwiperSlide>
         ))}
-      </div>
+      </Swiper>
     </section>
   );
 };

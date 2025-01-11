@@ -1,3 +1,48 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: #000000; /* Button color */
+  border-radius: 50%; /* Circular shape */
+  width: 40px !important;
+  height: 40px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+  transition: transform 0.3s, opacity 0.3s;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+/* Position the buttons */
+.swiper-button-next {
+  right: -20px; /* Move to the right of the Swiper */
+}
+
+.swiper-button-prev {
+  left: -20px; /* Move to the left of the Swiper */
+}
+
+/* Remove arrow text */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: "";
+  color: transparent;
+}
+
+.swiper-button-next::after {
+  background-image: url("./assets/arrow.svg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.swiper-button-prev::after {
+  background-image: url("./assets/arrow.svg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  rotate: -180deg;
+}
