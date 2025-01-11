@@ -80,7 +80,7 @@ const Header = () => {
         <span className="w-4 h-1 ml-auto rounded-full bg-black"></span>
       </div>
       <MobileMenue active={isActive} />
-      <img src="/logo.svg" alt="" className="h-fit " />
+      <img src="./assets/logo.svg" alt="" className="h-fit " />
 
       <div className="flex items-center gap-4">
         <div className="hidden items-center gap-4 lg:flex">
