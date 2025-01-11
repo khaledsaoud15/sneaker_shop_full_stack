@@ -23,34 +23,11 @@ const Products = () => {
         </a>
       </div>
 
-      <Swiper
-        className=" !w-full !h-[60vh] !items-center !flex !justify-center"
-        modules={[Navigation, A11y]}
-        spaceBetween={25}
-        slidesPerView={4}
-        navigation
-        loop={true}
-        breakpoints={{
-          650: {
-            slidesPerView: 2,
-            spaceBetween: 50,
-          },
-          780: {
-            slidesPerView: 3,
-            spaceBetween: 40,
-          },
-          1024: {
-            slidesPerView: 4,
-            spaceBetween: 30,
-          },
-        }}
-      >
+      <div className="grid grid-cols-2 !w-full !h-[60vh] !items-center  !justify-center">
         {products.map((p, index) => (
-          <SwiperSlide className="!w-auto !h-[50vh]">
-            <Product key={index} p={p} />
-          </SwiperSlide>
+          <Product key={index} p={p} />
         ))}
-      </Swiper>
+      </div>
     </section>
   );
 };
