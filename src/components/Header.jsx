@@ -8,7 +8,7 @@ const MobileMenue = ({ active }) => {
     <div
       className={`absolute top-full left-0 flex flex-col w-full ${
         active ? "h-fit" : "h-0"
-      } px-16 gap-6 bg-white z-10 overflow-hidden transition-all duration-300`}
+      } px-16 gap-6 bg-white z-50 overflow-hidden transition-all duration-300`}
     >
       <Link to="/" className="w-fit mt-8">
         Home
@@ -80,7 +80,7 @@ const Header = () => {
         <span className="w-4 h-1 ml-auto rounded-full bg-black"></span>
       </div>
       <MobileMenue active={isActive} />
-      <img src="./assets/logo.svg" alt="" className="h-fit " />
+      <img src="../assets/logo.svg" alt="" className="h-fit " />
 
       <div className="flex items-center gap-4">
         <div className="hidden items-center gap-4 lg:flex">

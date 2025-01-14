@@ -82,7 +82,7 @@ const SingleProduct = () => {
               <Button
                 variant="contained"
                 size="medium"
-                className="w-full !bg-main !text-xs md:text-lg"
+                className="w-full !bg-main !text-xs md:!text-base"
                 endIcon={<ShoppingCartCheckout />}
               >
                 ADD TO CART

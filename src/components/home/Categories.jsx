@@ -12,7 +12,7 @@ const Categories = () => {
           SHOP NOW
         </a>
       </div>
-      <div className="flex flex-wrap w-full gap-4 justify-center">
+      <div className="grid grid-col-1 md:grid-cols-3 w-full gap-4 justify-center">
         {categories.map((c, i) => (
           <div className="w-full h-[50vh] lg:h-[70vh] rounded-lg overflow-hidden relative text-end md:w-auto">
             <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-black/30  to-black/30"></div>

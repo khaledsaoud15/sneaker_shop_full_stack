@@ -23,7 +23,7 @@ const Products = () => {
         </a>
       </div>
 
-      <div className="grid w-[95%] grid-cols-1 mx-auto h-fit py-8 items-center justify-center md:grid-cols-3 lg:grid-cols-4">
+      <div className="grid w-[95%] grid-cols-1 gap-6 mx-auto h-fit py-8 items-center justify-center md:grid-cols-3">
         {products.map((p, index) => (
           <Product key={index} p={p} />
         ))}

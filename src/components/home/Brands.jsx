@@ -10,10 +10,10 @@ const Brands = () => {
       gradientWidth={200}
     >
       <div className="flex w-screen justify-evenly gap-8 pointer-events-none">
-        <img src="./assets/nike.png" alt="" className="h-24" />
-        <img src="./assets/hermes.png" alt="" className="h-24" />
-        <img src="./assets/adidas.png" alt="" className="h-24" />
-        <img src="./assets/paulbear.png" alt="" className="h-24" />
+        <img src="./assets/nike.png" alt="" className="h-16 lg:h-24" />
+        <img src="./assets/hermes.png" alt="" className="h-16 lg:h-24" />
+        <img src="./assets/adidas.png" alt="" className="h-16 lg:h-24" />
+        <img src="./assets/paulbear.png" alt="" className="h-16 lg:h-24" />
       </div>
     </Marquee>
   );

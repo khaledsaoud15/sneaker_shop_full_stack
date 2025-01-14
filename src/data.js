@@ -1,3 +1,10 @@
+import {
+  DeliveryDiningOutlined,
+  Discount,
+  MessageOutlined,
+  Payment,
+} from "@mui/icons-material";
+
 export const categories = [
   {
     id: 1,
@@ -98,3 +105,30 @@ export const products = [
   //   img: "./assets/asics.png",
   // },
 ];
+
+// export const offers = [
+//   {
+//     id: 1,
+//     title: "Fast delivery",
+//     description: "Free Shipping for orders over £130",
+//     icon: <DeliveryDiningOutlined />,
+//   },
+//   {
+//     id: 2,
+//     title: "Secure SSL",
+//     description: "256-Bit Payment Protection",
+//     icon: <MessageOutlined />,
+//   },
+//   {
+//     id: 3,
+//     title: "Paypal Or appDelivery",
+//     description: "Pay with multiple credit cards",
+//     icon: <Payment />,
+//   },
+//   {
+//     id: 4,
+//     title: "Get discounts",
+//     description: "Join the sale campaign",
+//     icon: <Discount />,
+//   },
+// ];

@@ -4,11 +4,11 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="relative w-full h-screen px-20 flex items-center">
+    <section className="relative w-full h-[70vh] px-20 flex items-center">
       <img
         src="./assets/hero.jpg"
         alt=""
-        className="absolute w-full  h-full left-0 top-0 object-cover"
+        className="absolute w-full h-full left-0 top-0 object-cover"
       />
       <div className="absolute w-full h-full top-0 left-0 bg-gradient-to-r from-black/20 via-transparent to-black/20 z-10"></div>
       <div className="flex flex-col gap-3 z-30">
@@ -19,7 +19,7 @@ const Hero = () => {
           SHOP NOW <ArrowRightAlt />
         </p>
       </div>
-      <div className="absolute bottom-32 right-16 flex flex-col pl-2 border-l z-40 md:bottom-56 md:right-80 lg:bottom-4/5 lg:right-[35%]">
+      <div className="absolute bottom-32 right-16 flex flex-col pl-2 border-l z-40 md:bottom-56 md:right-80 lg:bottom-[30%] lg:right-[35%]">
         <h2 className="font-semibold text-lg text-white">Hermes SHOES</h2>
         <p className="text-white font-medium">$48.00</p>
       </div>
