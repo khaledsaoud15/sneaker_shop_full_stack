@@ -1,5 +1,6 @@
 import { CompareArrows, Favorite, Search } from "@mui/icons-material";
 import { Button } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const Product = ({ p }) => {
   return (
@@ -34,7 +35,7 @@ const Product = ({ p }) => {
           endIcon={<Search />}
           className="!bg-[#2F4858] hover:!bg-[#04090c] !mt-auto"
         >
-          More Details
+          <Link to={`/product/${p.id}`}>More Details</Link>
         </Button>
       </div>
     </>
