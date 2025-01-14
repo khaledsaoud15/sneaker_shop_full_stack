@@ -30,7 +30,6 @@ const SingleProduct = () => {
 
     if (p) {
       setProduct(p);
-      console.log(p);
     }
   }, []);
   return (
@@ -42,7 +41,7 @@ const SingleProduct = () => {
           <img
             src={product.img}
             alt={product.title}
-            className="h-[40vh] w-3/4 mx-auto object-cover md:w-2/4 md:h-[50vh] lg:w-auto lg:h-[80vh] "
+            className="aspect-auto w-3/4 mx-auto object-cover md:w-2/4 md:h-[50vh] lg:w-auto lg:h-[80vh] "
           />
           <div className="flex flex-col gap-2 w-full h-fit lg:w-1/2 lg:justify-center lg:h-[80vh]">
             <h1 className="text-2xl font-semibold md:text-3xl lg:text-4xl">
@@ -83,7 +82,7 @@ const SingleProduct = () => {
               <Button
                 variant="contained"
                 size="medium"
-                className="w-full !bg-main"
+                className="w-full !bg-main !text-xs md:text-lg"
                 endIcon={<ShoppingCartCheckout />}
               >
                 ADD TO CART
