@@ -19,10 +19,10 @@ const Product = ({ p }) => {
             </div>
             <Rating
               name="half-rating-read"
-              defaultValue={0}
+              defaultValue={p.stars}
               precision={p.stars}
               readOnly
-              className="!text-sm flex items-center"
+              className="!text-lg flex items-center"
             />
           </div>
           <div className="flex items-center justify-between">
