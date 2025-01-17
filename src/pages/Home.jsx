@@ -9,7 +9,6 @@ import Offers from "../components/home/Offers";
 const Home = () => {
   return (
     <div>
-      <Header />
       <MarqueeItem text="Final Reductions on the up to $60 - Off Sale" />
       <Hero />
       <Offers />

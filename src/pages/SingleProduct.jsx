@@ -34,7 +34,6 @@ const SingleProduct = () => {
   }, []);
   return (
     <>
-      <Header />
       <section className="flex flex-col h-full px-8 lg:px-16 gap-8">
         <div className="flex flex-col gap-6 w-full relative lg:flex-row">
           <Search className="absolute right-8 top-8 !text-3xl p-1 rounded-full bg-gray-100 flex items-center justify-center" />
