@@ -4,7 +4,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="relative w-full h-[70vh] px-20 flex items-center">
+    <section className="relative w-full h-[70vh] px-20 flex items-center pointer-events-none">
       <img
         src="./assets/hero.jpg"
         alt=""
@@ -16,7 +16,7 @@ const Hero = () => {
           SEASON ARRIVAL
         </h1>
         <p className="text-white font-thin cursor-pointer">
-          SHOP NOW <ArrowRightAlt />
+          SHOP NOW <ArrowRightAlt className="!w-fit bg-red-500" />
         </p>
       </div>
       <div className="absolute bottom-32 right-16 flex flex-col pl-2 border-l z-40 md:bottom-56 md:right-80 lg:bottom-[30%] lg:right-[35%]">
