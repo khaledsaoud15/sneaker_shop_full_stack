@@ -9,7 +9,7 @@ export const products = [
   {
     id: 1,
     title: "Shiny Dress",
-    stars: 5,
+    stars: 2,
     reviews: 4.1,
     brand: "chanel",
     description: "Adidas samba for casual wear",
@@ -22,7 +22,7 @@ export const products = [
   {
     id: 2,
     title: "Long dress",
-    stars: 5,
+    stars: 4,
     reviews: 4.1,
     brand: "chanel",
     description: "SB for casual wear",
@@ -48,7 +48,7 @@ export const products = [
   {
     id: 4,
     title: "NEW BALANCE 530",
-    stars: 5,
+    stars: 2,
     reviews: 4.1,
     brand: "chanel",
     description: "New balance 530 for casual wear and modern look",
@@ -61,7 +61,7 @@ export const products = [
   {
     id: 5,
     title: "NEW BALANCE 530",
-    stars: 5,
+    stars: 3,
     reviews: 4.1,
     brand: "chanel",
     description: "New balance 530 for casual wear and modern look",
@@ -74,7 +74,7 @@ export const products = [
   {
     id: 6,
     title: "NEW BALANCE 530",
-    stars: 5,
+    stars: 4,
     reviews: 4.1,
     brand: "chanel",
     description: "New balance 530 for casual wear and modern look",

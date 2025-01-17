@@ -19,7 +19,7 @@ const Product = ({ p }) => {
             </div>
             <Rating
               name="half-rating-read"
-              defaultValue={2}
+              defaultValue={0}
               precision={p.stars}
               readOnly
               className="!text-sm flex items-center"
