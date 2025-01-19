@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from "react";
 import { products } from "../data";
 import Product from "./Product";
 import { Button } from "@mui/material";
 import { Warning } from "@mui/icons-material";
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Products = () => {
   const [filter, setFilter] = useState(products);
@@ -92,9 +93,14 @@ const Products = () => {
           </div>
         )}
       </div>
-      <Button variant="contained" className="lg:!w-1/5 md:!w-2/5 !w-3/5 !bg-main">
-        SEE MORE
-      </Button>
+      <Link to="/shop" className="lg:w-1/5 md:w-2/5 w-3/5 bg-main rounded-md">
+        <Button
+          variant="contained"
+          className="!w-full !bg-main"
+        >
+          SEE MORE
+        </Button>
+      </Link>
     </section>
   );
 };

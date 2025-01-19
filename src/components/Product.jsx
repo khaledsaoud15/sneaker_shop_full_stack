@@ -8,7 +8,7 @@ const Product = ({ p }) => {
       <Link to={`/product/${p.id}`}>
         <div className="cursor-pointer w-full h-fit p-6 shadow-xl flex flex-col gap-4 overflow-hidden rounded-lg md:w-auto lg:w-full lg:h-full">
           <img
-            src={p.img}
+            src={p.thumbnail}
             alt={p.title}
             className="w-full h-auto mx-auto md:h-full md:w-full lg:h-full object-fit"
           />

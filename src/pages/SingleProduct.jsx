@@ -8,7 +8,6 @@ import {
   ShoppingCartCheckout,
   Twitter,
 } from "@mui/icons-material";
-import Header from "../components/Header";
 import { Button } from "@mui/material";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
@@ -22,42 +21,68 @@ const Reviews = () => {
 };
 
 const SingleProduct = () => {
+  const [imageIndex, setImageIndex] = useState(0);
   const [text, setText] = useState("description");
   const { id } = useParams();
-  const [product, setProduct] = useState({});
+  const [product, setProduct] = useState({
+    images: [],
+  });
+
   useEffect(() => {
     const p = products.find((i) => i.id === +id);
 
     if (p) {
       setProduct(p);
     }
-  }, []);
+  }, [id]);
+
   return (
     <>
       <section className="flex flex-col h-full px-8 lg:px-16 gap-8">
         <div className="flex flex-col gap-6 w-full relative lg:flex-row">
           <Search className="absolute right-8 top-8 !text-3xl p-1 rounded-full bg-gray-100 flex items-center justify-center" />
-          <img
-            src={product.img}
-            alt={product.title}
-            className="aspect-auto w-3/4 mx-auto object-cover md:w-2/4 md:h-[50vh] lg:w-auto lg:h-[80vh] "
-          />
+          <div className="w-full h-fit flex flex-col-reverse gap-3 md:flex-row md:gap-0">
+            <div className="flex items-center gap-2 lg:gap-4 w-full md:w-1/6 md:flex-col md:justify-evenly">
+              {product.images?.map((i, index) => (
+                <img
+                  key={index}
+                  onClick={() => setImageIndex(index)}
+                  src={i}
+                  alt={product.title}
+                  className="w-1/4 h-auto aspect-square object-cover rounded-md cursor-pointer md:w-full"
+                />
+              ))}
+            </div>
+            {product.images?.length > 0 ? (
+              <img
+                src={product.images[imageIndex]}
+                alt={product.title}
+                className="h-[40vh] rounded-md w-full mx-auto object-cover md:w-3/4 md:h-full lg:w-3/5 lg:aspect-square"
+              />
+            ) : (
+              <p className="text-gray-500">No images available</p>
+            )}
+          </div>
+
           <div className="flex flex-col gap-2 w-full h-fit lg:w-1/2 lg:justify-center lg:h-[80vh]">
             <h1 className="text-2xl font-semibold md:text-3xl lg:text-4xl">
               {product.title}
             </h1>
             <p className="text-gray-800 text-xl">${product.price}</p>
             <div className="flex items-center gap-2">
-              {product.colors?.map((c) => (
+              {product.colors?.map((c, index) => (
                 <div
-                  className="w-4 h-4 rounded-full cursor-pointer border "
+                  key={index}
+                  className="w-4 h-4 rounded-full cursor-pointer border"
                   style={{ backgroundColor: c }}
                 ></div>
               ))}
             </div>
             <div className="flex items-center gap-2">
-              {product.size?.map((s) => (
-                <p className="text-xl font-semibold cursor-pointer">{s}</p>
+              {product.size?.map((s, index) => (
+                <p key={index} className="text-xl font-semibold cursor-pointer">
+                  {s}
+                </p>
               ))}
             </div>
             <div className="flex items-center gap-5">
@@ -120,10 +145,8 @@ const SingleProduct = () => {
           </div>
           {text === "description" ? (
             <Description desc={product.description} />
-          ) : (
-            ""
-          )}
-          {text === "reviews" ? <Reviews /> : ""}
+          ) : null}
+          {text === "reviews" ? <Reviews /> : null}
         </div>
       </section>
     </>
