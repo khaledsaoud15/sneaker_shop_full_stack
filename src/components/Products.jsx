@@ -76,7 +76,7 @@ const Products = () => {
         </div>
       </div>
 
-      <div className="grid w-full px-8 lg:w-4/5 grid-cols-1 gap-6 mx-auto h-fit items-center justify-center lg:grid-cols-3 md:grid-cols-2">
+      <div className="grid w-full px-1 lg:w-4/5 grid-cols-2 gap-1 gap-y-4 md:gap-y-0 md:gap-4 lg:gap-6 mx-auto h-fit items-center justify-center lg:grid-cols-3 md:grid-cols-2">
         {filter.length > 0 ? (
           filter.map((p, index) => <Product key={index} p={p} />)
         ) : (
@@ -94,10 +94,7 @@ const Products = () => {
         )}
       </div>
       <Link to="/shop" className="lg:w-1/5 md:w-2/5 w-3/5 bg-main rounded-md">
-        <Button
-          variant="contained"
-          className="!w-full !bg-main"
-        >
+        <Button variant="contained" className="!w-full !bg-main">
           SEE MORE
         </Button>
       </Link>

@@ -5,7 +5,6 @@ const MarqueeItem = ({ text }) => {
     <Marquee
       gradient={true}
       gradientWidth={800}
-      gradientColor={[0, 255, 0]}
       className="!w-full h-12 flex items-center bg-[#BEF4B5]"
     >
       <div className="flex w-full justify-between gap-8 pointer-events-none">

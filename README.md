@@ -1,4 +1,4 @@
-# Sneaker Shop Full Stack
+# Latto Shop Full Stack
 
 [![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://shields.io/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
@@ -6,7 +6,7 @@
 
 ## Description
 
-Sneaker Shop is a full-stack web application designed to provide a seamless shopping experience for sneaker enthusiasts. The project includes a modern frontend interface and a robust backend API to handle user authentication, product management, and order processing.
+Latto Shop is a full-stack web application designed to provide a seamless shopping experience for clothes enthusiasts. The project includes a modern frontend interface and a robust backend API to handle user authentication, product management, and order processing.
 
 ## Table of Contents
 
@@ -19,8 +19,8 @@ Sneaker Shop is a full-stack web application designed to provide a seamless shop
 ## Features
 
 - User authentication (sign up, login, logout)
-- Browse and search for sneakers
-- Add sneakers to the cart and manage orders
+- Browse and search for products
+- Add products to the cart and manage orders
 - Admin panel for managing products
 - Responsive design for all devices
 
@@ -34,6 +34,8 @@ Sneaker Shop is a full-stack web application designed to provide a seamless shop
 - Tailwind CSS
 - Axios
 - Material UI
+- Letise form smooth scrolling
+- gsap for animation
 
 ### Backend:
 
@@ -44,7 +46,7 @@ Sneaker Shop is a full-stack web application designed to provide a seamless shop
 ### Others:
 
 - JWT Authentication
-- Stripe API for payment processing
+- Stripe and Chargily API for payment processing
 - Cloudinary for image uploads
 
 ---

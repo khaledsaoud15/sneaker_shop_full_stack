@@ -6,8 +6,8 @@ const Brands = () => {
     <Marquee
       className="!w-full  flex items-center"
       gradient={true}
-      gradientColor="#e8e8e8"
-      gradientWidth={200}
+      gradientColor="#fffdf0"
+      gradientWidth={150}
     >
       <div className="flex w-screen justify-evenly gap-8 pointer-events-none">
         <img src="./assets/nike.png" alt="" className="h-16 lg:h-24" />
