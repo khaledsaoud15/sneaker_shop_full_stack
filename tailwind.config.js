@@ -6,8 +6,9 @@ export default {
       colors: {
         main: "#2f4858",
       },
-      boxShadow: {
-        mainshadow: "20px 20px 0px 0px #fff, -20px -20px 0 0 #fff",
+      fontFamily: {
+        code: ["code", "sans-serif"],
+        oliver: ["oliver", "serif"],
       },
     },
   },

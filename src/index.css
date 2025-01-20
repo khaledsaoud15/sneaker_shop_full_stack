@@ -6,3 +6,17 @@ body {
   background-color: #fffdf0;
   height: fit-content;
 }
+
+@font-face {
+  font-family: "code";
+  src: url("../public/fonts/code/CODE\ Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "oliver";
+  src: url("../public/fonts/oliver/oliver__.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

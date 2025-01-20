@@ -12,6 +12,7 @@ import SingleProduct from "./pages/SingleProduct";
 import Lenis from "@studio-freight/lenis";
 import { useEffect } from "react";
 import Header from "./components/Header";
+import CursorFollower from "./components/CursorFollower";
 
 // Smooth Scroll Component
 const SmoothScroll = ({ children }) => {
@@ -82,15 +83,16 @@ const App = () => {
   return (
     <SmoothScroll>
       <BrowserRouter>
+        <CursorFollower />
         <Header />
-
         <Breadcrumbs />
-
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/product/:id" element={<SingleProduct />} />
-          <Route path="/about" element={<About />} />
-        </Routes>
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/product/:id" element={<SingleProduct />} />
+            <Route path="/about" element={<About />} />
+          </Routes>
+        </main>
       </BrowserRouter>
     </SmoothScroll>
   );

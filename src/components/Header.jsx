@@ -25,19 +25,9 @@ const MobileMenue = ({ active }) => {
       <a href="" className="w-fit">
         Account
       </a>
-      <a href="" className="w-fit">
+      <a href="" className="w-fit mb-8">
         Wishlist
       </a>
-      <a className="flex items-center gap-1 w-fit" href="">
-        Account
-        <a
-          href=""
-          className="w-4 h-4 p-3 rounded-full bg-gray-100 flex border border-black items-center justify-center"
-        >
-          0
-        </a>
-      </a>
-      <Search className="!text-md cursor-pointer mb-8" />
     </div>
   );
 };
@@ -72,15 +62,29 @@ const Header = () => {
         </a>
       </div>
       <div
-        className="flex flex-col gap-1 cursor-pointer lg:hidden"
+        className="flex flex-col gap-1 cursor-pointer lg:hidden "
         onClick={() => setIsActive(!isActive)}
       >
-        <span className="w-8 h-1 rounded-full bg-black"></span>
-        <span className="w-6 h-1 ml-auto rounded-full bg-black"></span>
-        <span className="w-4 h-1 ml-auto rounded-full bg-black"></span>
+        <span
+          className={`w-8 h-1 rounded-full bg-black ${
+            isActive ? "rotate-45 translate-y-2" : "rotate-0 translate-y-0"
+          } transition-all duration-300`}
+        ></span>
+        <span
+          className={`h-1 ml-auto rounded-full bg-black ${
+            isActive ? "w-0" : "w-6"
+          } transition-all duration-300`}
+        ></span>
+        <span
+          className={`transition-all duration-300 h-1 rounded-full bg-black ml-auto ${
+            isActive
+              ? "-rotate-45 -translate-y-2 w-8"
+              : "rotate-0 translate-y-0 w-4"
+          }`}
+        ></span>
       </div>
       <MobileMenue active={isActive} />
-      <img src="../assets/logo.svg" alt="" className="h-fit " />
+      <h1 className="font-oliver font-medium text-4xl">LATTO</h1>
 
       <div className="flex items-center gap-4">
         <div className="hidden items-center gap-4 lg:flex">
